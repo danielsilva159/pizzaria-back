@@ -4,8 +4,6 @@ import { extname, resolve } from "path";
 
 export default {
   upload(folder: string) {
-    console.log(resolve(__dirname, "..", "..", folder));
-
     return {
       storage: multer.diskStorage({
         destination: resolve(__dirname, "..", "..", folder),
