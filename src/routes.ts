@@ -40,7 +40,7 @@ router.post(
   new CreateProductController().handle
 );
 router.get(
-  "category/product",
+  "/category/product",
   isAutenticated,
   new ListByCategoryController().handle
 );
